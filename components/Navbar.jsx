@@ -46,7 +46,7 @@ export const Navbar = ({ brand, onHomeClick }) => {
         </div>
         <div className="flex flex-col py-4">
           {navItems.map((item) => (
-            <a key={item} href="#" className="px-6 py-4 text-lg font-bold uppercase tracking-tight hover:bg-gray-50 border-b border-gray-50 last:border-0" onClick={() => setIsOpen(false)}>{item}</a>
+            <a key={item} href={ item === 'News' ? '/' : `/${item.toLowerCase()}`} className="px-6 py-4 text-lg font-bold uppercase tracking-tight hover:bg-gray-50 border-b border-gray-50 last:border-0" onClick={() => setIsOpen(false)}>{item}</a>
           ))}
         </div>
       </div>
