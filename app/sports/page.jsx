@@ -30,7 +30,7 @@ export default function SportsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {NEWS_ARTICLES.map(article => (
-            <ArticleCard key={article.id} article={article} brand={currentBrand} />
+            <ArticleCard key={article.id} article={article} brand={currentBrand}  onClick={() => setView('news')}/>
           ))}
         </div>
       </main>
