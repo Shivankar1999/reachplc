@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "app/sports/page.jsx", "app/tv/page.jsx", "app/layout.jsx", "app/page.jsx", "next.config.js"  ],
   "exclude": ["node_modules"]
 }
